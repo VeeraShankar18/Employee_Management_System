@@ -1,0 +1,20 @@
+package com.project1.www.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.project1.www.model.Employee;
+import com.project1.www.repo.EmployeeRepository;
+
+@Service
+public class EmployeeService 
+{
+	@Autowired
+	EmployeeRepository employeeRepository;
+	
+	public String postEmployeeDetails(Employee employee)
+	{
+		employeeRepository.save(employee);
+		return "Uploaded SuccessFully";
+	}
+}
