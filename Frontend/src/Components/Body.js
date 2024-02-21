@@ -27,11 +27,12 @@ function Body() {
   return (
     <div>
      <Header/>
-    <div className='container mt-4 text-center'>
-      <h2>Employee Details</h2>
-      <Link className='btn btn-primary w-100 mt-4' to='/AddUser'>Add New User</Link>
-      <table className='table table-bordered table-hover table-primary border-secondary mb-5'>
-        <thead>
+    <div className='container mt-4'>
+      <h2 className='text-center'>Employee Details</h2>
+      <Link className='btn btn-primary w-25 mt-4' to='/AddUser'>Add New User</Link>
+      <div className='mainTable text-center'>
+      <table className='table table-bordered table-hover table-primary mb-5'>
+        <thead className='tHead'>
             <tr>
                 <th>ID</th>
                 <th>FIRST NAME</th>
@@ -57,6 +58,7 @@ function Body() {
           }
         </tbody>
       </table>
+      </div>
     </div>
     <Footer/>
     </div>

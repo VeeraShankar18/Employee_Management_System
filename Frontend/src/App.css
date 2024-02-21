@@ -7,4 +7,17 @@
   bottom:0;
   position:fixed
 }
+.mainTable{
+  height:300px;
+  overflow-y: scroll;
+}
+.mainTable::-webkit-scrollbar{
+  display:none;
+  padding-top:-10px;
+}
+.tHead{
+  top:0;
+  position:sticky;
+}
+
 

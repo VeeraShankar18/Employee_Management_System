@@ -19,9 +19,9 @@ function ViewUser() {
   return (
     <div className='container mt-5 w-50 shadow'>
         <div className='row'>
-            <h1 className='text-center my-4'>User Details</h1>
+            <h1 className='text-center my-4'>Employee Details</h1>
             <div className='card'>
-                <div className='card-header text-center'><h4>User Details of ID: {id}</h4></div>
+                <div className='card-header text-center'><h4>Employee Details of ID: {id}</h4></div>
                 <div className='card-body container w-50 '>
                     <ul className='list-group'>
                         <li className='list-group-item'><b>First Name:</b> &nbsp; {user.firstName}</li>
